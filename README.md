@@ -1,19 +1,33 @@
-# 🎈 Blank app template
+# 🎶 DecadeTune
+https://decadetune.streamlit.app/
 
-A simple Streamlit app template for you to modify!
+### Overview
+DecadeTune is a machine learning project designed to classify songs based on the decade group they were released in by analyzing their audio features. This project identifies the distinctive sound signatures that characterize music from various eras, from the 50s-60s to the 2010s-2020s.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+The model leverages key musical features such as tempo, loudness, acousticness, energy, obtained with the Spotify API
 
-### How to run it on your own machine
+### Problem Statement
+DecadeTune aims to enhance algorithmic recommendations by developing a model that identifies a song's release decade group using only its audio features. By capturing each track's unique sound signature and classifying it according to the defining hits of its respective decade group, DecadeTune will possibly enrich the listening experience for users who favor retro or vintage music.
 
-1. Install the requirements
+### Business Value Proposition
+In the crowded music streaming industry, personalization and user engagement are crucial factors for success. DecadeTune offers a way to go beyond traditional recommendation methods that rely heavily on surface-level metadata (e.g., release dates or artist names). Instead, it provides a deeper understanding of the actual audio characteristics that define each decade.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- More accurate personalized decade-based recommendations, connecting listeners with music that fits their taste.
 
-2. Run the app
+- Cater to niche preferences such as, offering a richer and more tailored user experience.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+- Appeal to users who are enthusiasts of specific music eras.
+
+### What I Learned
+1) Deploying machine learning models with a focus on business value, aligning technical outcomes with improvements.
+
+2) The importance of feature engineering when building classifiers to improve accuracy. For example, creating new features from KMeans Clustering.
+
+3) The interpretation of classifier models using metrics like accuracy, precision, recall, and feature importance
+
+4) Using cross validation to to ensure model robustness and stability across different data splits, preventing overfitting and improving generalization to unseen data.
+
+### Notes
+- Last Updated: 12/9/2024 (Updates Yearly)
+- Classification Model Trained on Songs in Spotify All Out "_ _" Playlists
+- By: Hong Kai
