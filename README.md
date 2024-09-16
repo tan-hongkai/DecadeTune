@@ -2,7 +2,7 @@
 https://decadetune.streamlit.app/
 
 ### Overview
-DecadeTune is a machine learning project designed to classify songs based on the decade group they were released in by analyzing their audio features. This project identifies the distinctive sound signatures that characterize music from various eras, from the 50s-60s to the 2010s-2020s.
+DecadeTune is a machine learning project that classifies songs into decade groups by analyzing audio features and referencing popular hits. This project identifies the distinctive sound signatures that characterize music from various eras, from the 50s-60s to the 2010s-2020s.
 
 The model leverages key musical features such as tempo, loudness, acousticness, energy, obtained with the Spotify API
 
