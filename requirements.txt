@@ -1,8 +1,5 @@
 streamlit
-joblib
-spotipy
-numpy
-pandas
 scikit-learn == 1.5.1
+spotipy
 feature_engine
 python-dotenv == 1.0.1
