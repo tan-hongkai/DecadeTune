@@ -5,6 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
+import streamlit.components.v1 as components
 import os
 
 # Load pre-trained models and preprocessors
@@ -25,6 +26,11 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIPY_CLI
 
 # Streamlit app layout
 st.set_page_config(layout="wide",page_title='DecadeTune')
+adsense_code = """
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4217328231836897"
+     crossorigin="anonymous"></script>
+"""
+components.html(adsense_code, height=0)
 st.title("🎶 DecadeTune, A Song Classifier for Decade Groups")
 st.subheader("Enter a Spotify song URL, and I'll tell you if it sounds like a hit from the 50s-60s, 70s-80s, 90s-2000s, or 2010s-2020s:")
 
